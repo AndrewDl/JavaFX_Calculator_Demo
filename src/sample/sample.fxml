@@ -1,8 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+
+<VBox alignment="center" prefHeight="185.0" prefWidth="150.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+   
+       <HBox spacing="10.0">
+      <children>
+          <TextField fx:id="resultWindow" editable="false" promptText="0" />
+      </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+       </HBox>
+   
+       <HBox spacing="10.0">
+      <children>
+              <Button fx:id="button7" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="7" />
+              <Button fx:id="button8" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="8" />
+              <Button fx:id="button9" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="9" />
+              <Button fx:id="buttonPlus" onAction="#onActonClick" prefHeight="25.0" prefWidth="25.0" text="+" />
+      </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+       </HBox>
+   
+       <HBox spacing="10.0">
+      <children>
+              <Button fx:id="button4" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="4" />
+              <Button fx:id="button5" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="5" />
+              <Button fx:id="button6" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="6" />
+              <Button fx:id="buttonMinus" onAction="#onActonClick" prefHeight="25.0" prefWidth="25.0" text="-" />
+      </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+       </HBox>
+   
+       <HBox spacing="10.0">
+      <children>
+              <Button fx:id="button1" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="1" />
+              <Button fx:id="button2" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="2" />
+              <Button fx:id="button3" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="3" />
+              <Button fx:id="buttonMultiply" onAction="#onActonClick" prefHeight="25.0" prefWidth="25.0" text="*" />
+      </children>
+       </HBox>
+   
+       <HBox spacing="10.0">
+      <children>
+              <Button fx:id="buttonClear" onAction="#onActonClick" prefHeight="25.0" prefWidth="25.0" text="C" />
+              <Button fx:id="button0" onAction="#onPadClick" prefHeight="25.0" prefWidth="25.0" text="0" />
+              <Button fx:id="buttonEqual" onAction="#onCalculateClick" prefHeight="25.0" prefWidth="25.0" text="=" />
+              <Button fx:id="buttonDivide" onAction="#onActonClick" prefHeight="25.0" prefWidth="25.0" text="/" />
+      </children>
+       </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+
+</VBox>
